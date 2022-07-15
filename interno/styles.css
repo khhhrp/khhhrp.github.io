@@ -1,0 +1,708 @@
+/* Обнуляющие стили */
+body {
+    margin: 0;
+    /* font-family: "DM Serif Display", serif; */
+    font-family: "Jost", sans-serif;
+    font-size: 22px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+/* Общие стили */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Стили шапки */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+.header__logo {
+    margin-right: auto;
+}
+.header__link {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+    color: #292f36;
+    margin-left: 40px;
+}
+.header__link:first-child {
+    margin: 0;
+}
+.header__link:hover {
+    color: #cda274;
+}
+
+/* Первый блок Dream */
+.dream__backgound {
+    border-radius: 0px 0px 0px 290px;
+    background-image: url(./img/img01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.dream {
+    display: flex;
+    align-items: center;
+}
+.dream__content {
+    margin: 195px 0 260px 0;
+    max-width: 850px;
+}
+.dream__title {
+    font-family: "DM Serif Display" serif;
+    font-size: 80px;
+    line-height: 125px;
+    letter-spacing: 0.22px;
+    color: #292f36;
+    margin-bottom: 19px;
+}
+.dream__text {
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+    margin-bottom: 35px;
+}
+.dream__button {
+    display: inline-block;
+    background: #292f36;
+    border: 2px solid #212325;
+    border-radius: 18px;
+}
+.dream__button a {
+    display: inline-flex;
+    padding: 22px 34px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.72px;
+    color: #ffffff;
+}
+.dream__button span {
+    margin-right: 21px;
+}
+
+/* Второй блок Design */
+.design {
+    display: flex;
+    margin: 100px 0;
+}
+.design__item {
+    text-align: center;
+    margin: 75px 52px 70px 42px;
+}
+.design__title {
+    font-family: "DM Serif Display" serif;
+    font-size: 25px;
+    line-height: 39px;
+    letter-spacing: 0.22px;
+    color: #292f36;
+    margin-bottom: 17px;
+}
+.design__text {
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+    margin-bottom: 35px;
+}
+
+.design_button a {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.36px;
+    color: #4d5053;
+}
+.design_button span {
+    margin-right: 9px;
+}
+
+/* Третий блок Most */
+.most {
+    display: flex;
+    justify-content: space-between;
+}
+.most__content {
+    max-width: 531px;
+}
+.most__text {
+    margin-bottom: 40px;
+}
+.most__text h3 {
+    margin-top: 0;
+    margin-bottom: 42px;
+    font-family: "DM Serif Display" serif;
+    font-size: 50px;
+    line-height: 65px;
+    letter-spacing: 0.22px;
+    color: #292f36;
+}
+.most__text p {
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+}
+.most__link a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+}
+.icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 93px;
+    width: 93px;
+    border-radius: 50%;
+    background-color: #f4f0ec;
+}
+.icon img {
+    width: 32px;
+    height: 32px;
+}
+.contacts {
+    margin-left: 20px;
+}
+.contacts:hover {
+    color: #cda274;
+}
+.most__btn a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #fff;
+    background: #292f36;
+    border: 2px solid #292f36;
+    border-radius: 18px;
+    padding: 25px 35px;
+}
+.most__btn span {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.72px;
+    color: #ffffff;
+    margin-right: 16px;
+}
+
+/* Четвертый блок People */
+.people {
+    margin: 140px 0;
+    background: #f4f0ec;
+    border-radius: 70px;
+    padding: 103px 51px 121px 51px;
+}
+.people__title {
+    text-align: center;
+    margin-bottom: 47px;
+    font-family: "DM Serif Display" serif;
+    font-size: 45px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.22px;
+    color: #292f36;
+}
+.people__card {
+    display: flex;
+}
+.people__item {
+    background: #ffffff;
+    border-radius: 30px;
+    margin-right: 18px;
+}
+.people__content {
+    margin: 50px 30px 45px 35px;
+}
+.people__header {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.name {
+    font-family: "DM Serif Display" serif;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0.22px;
+    color: #292f36;
+}
+.country {
+    font-size: 18px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+}
+.people__ava {
+    margin-right: 20px;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+}
+.people__text {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+}
+
+/* Стили для блока Brand, логотипы компаний */
+.brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 114px;
+}
+
+/* Блок projects */
+.projects {
+    padding-bottom: 60px;
+}
+.projects__title {
+    text-align: center;
+    max-width: 786px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.projects__title h3 {
+    font-family: "DM Serif Display" serif;
+    font-size: 47px;
+    line-height: 62px;
+    letter-spacing: 0.22px;
+    color: #292f36;
+    margin-bottom: 20px;
+}
+.projects__title p {
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+}
+.projects__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 60px;
+    grid-row: auto auto;
+}
+
+.projects__img {
+    margin-bottom: 24px;
+}
+.projects__content {
+    display: flex;
+    justify-content: space-between;
+}
+.projects_h {
+    font-family: "DM Serif Display" serif;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.22px;
+    color: #292f36;
+}
+.projects_p {
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+}
+.projects__link a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f0ec;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    transition: 1s;
+}
+.projects__link a:hover {
+    background-color: #cda274;
+}
+
+/* Блок years */
+.years_bg {
+    background-color: #f4f0ec;
+}
+.years {
+    display: flex;
+    justify-content: space-between;
+    padding: 140px 0;
+}
+.years__element {
+    text-align: center;
+    position: relative;
+}
+.years__element h3 {
+    font-family: "DM Serif Display" serif;
+    font-size: 85px;
+    line-height: 128px;
+    letter-spacing: 1.7px;
+    color: #cda274;
+}
+.years__element p {
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+}
+.years__element:not(:last-child)::after {
+    content: "";
+    display: block;
+    height: 195px;
+    width: 1px;
+    background: #cda274;
+    position: absolute;
+    top: 0;
+    right: -90px;
+}
+
+/* Блок Blogs */
+.blogs {
+    padding: 142px 0;
+}
+.blogs__title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+.blogs__title h3 {
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    line-height: 62px;
+    letter-spacing: 0.22px;
+    color: #292f36;
+}
+.blogs__title p {
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+}
+.blogs__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+}
+.blogs__item {
+    border: 1px solid #e7e7e7;
+    border-radius: 62px;
+    padding: 21px 21px 41px;
+}
+.blogs__image {
+    position: relative;
+}
+.blogs__image img {
+    max-width: 100%;
+}
+.blogs__note {
+    position: absolute;
+    bottom: 29px;
+    left: 24px;
+    background: #ffffff;
+    border-radius: 8px 8px 8px 0px;
+    padding: 10px;
+}
+.blogs__note span {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+}
+.blogs__text {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: "DM Serif Display";
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+    color: #292f36;
+}
+.blogs__date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blogs__date p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+}
+.blogs__link a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f0ec;
+    border-radius: 100px;
+    width: 52px;
+    height: 52px;
+}
+
+.join {
+    text-align: center;
+    background: #292f36;
+    border-radius: 70px;
+    padding: 100px 0;
+}
+.join__text {
+    color: #fff;
+}
+.join__text h4 {
+    font-family: "DM Serif Display";
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: 0.22px;
+    color: #ffffff;
+    margin-bottom: 9px;
+}
+.join__text p {
+    margin-bottom: 31px;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+}
+.join__link a {
+    background: #cda274;
+    border: 2px solid #cda274;
+    box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+    padding-top: 21px;
+    padding-left: 34px;
+    padding-bottom: 23px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.22px;
+    color: #ffffff;
+    display: inline-flex;
+}
+.join__link img {
+    filter: invert(100%);
+    margin-left: 27px;
+    margin-right: 15px;
+}
+
+/* Footer */
+.footer {
+    padding-top: 50px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 110px;
+}
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.footer_left p {
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.footer_link a {
+    text-decoration: none;
+}
+
+.footer_link a svg {
+    fill: orange;
+    transition: 1s;
+}
+
+.footer_link a:hover svg {
+    fill: red;
+}
+
+.footer_link a:not(:last-child) {
+    margin-right: 40px;
+}
+.footer_right {
+    display: flex;
+}
+.footer__item:not(:last-child) {
+    margin-right: 113px;
+}
+.footer__item a {
+    display: block;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+    text-decoration: none;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.footer__item a:first-child {
+    font-family: "DM Serif Display";
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0.22px;
+    color: #292f36;
+}
+.footer__item a:not(:last-child) {
+    margin-bottom: 21px;
+}
+.footer__item a:hover {
+    color: #cda274;
+}
+
+.footer_nav {
+    text-align: center;
+    padding: 35px 0;
+    border-top: 1px solid #f5f5f5;
+    line-height: 33px;
+    letter-spacing: 0.22px;
+    color: #4d5053;
+}
+.footer_nav span {
+    margin-right: 1px;
+}
+.footer_nav a {
+    text-decoration: none;
+    color: #cda274;
+}
+
+/* 1920
+1440
+1280
+1024
+768 */
+
+@media (max-width:1440px) {
+.container {
+        padding: 0 20px;
+    }
+}
+@media (max-width:1280px) {
+    .blogs__image img {
+        width: 100%;
+        height:100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .blogs__image {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .footer_right {
+        margin-top: 100px;
+    }
+    .footer_left {
+        text-align: start;
+    }
+    .country {
+        font-size: 16px;
+    }
+}
+@media (max-width:1024px) {
+    .footer__item:not(:last-child) {
+        margin-bottom: 50px
+    }
+    .header__link {
+        font-size: 18px;
+    }
+    .people__card {
+        flex-direction: column;
+    }
+    .people__item {
+        margin-right: 0;
+    }
+    .people__item:not(last-child) {
+        margin-bottom: 35px;
+    }
+    .dream__title {
+        font-size: 65px;
+    }
+    .design {
+        flex-direction: column;
+    }
+    .blogs__card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .years__element:not(:last-child)::after{ 
+        display: none;
+    }
+}
+@media (max-width:768px) {
+    .header__link:first-child {
+        margin-left: 40px;
+    }
+    .dream__title {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+    .header { 
+        flex-direction: column;
+    }
+    .header__logo {
+        margin: 0 auto;
+    }
+    .header__nav {
+        margin-top: 40px;
+    }
+    .dream__backgound {
+        border-radius: 0px 0px 0px 290px;
+        background-image: none;
+    }
+    .dream__content {
+        margin: 140px 0 40px 0;
+        text-align: center;
+    }
+    .brand{
+        flex-direction: column;
+    }
+    .brand img {
+        margin-bottom: 70px;
+    }
+    .name {
+        margin-bottom: 10px;
+    }
+    .projects__card {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .projects__item {
+        margin: 0 auto;
+    }
+    .years {
+        flex-direction: column;
+    }
+    .years__element {
+        margin-bottom: 50px;
+    }
+    .blogs__card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer_right {
+        flex-direction: column;
+    }
+}
