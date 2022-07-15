@@ -546,6 +546,7 @@ img {
   }
   .recent .recent__card .recent__items .recent__image img {
     width: 100%;
+    height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: center;
@@ -553,6 +554,9 @@ img {
   }
   .header .header__logo a {
     font-size: 18px;
+  }
+  .recent__image {
+    height: 240px;
   }
   .header__title p {
     font-size: 17px;
@@ -705,5 +709,8 @@ img {
   }
   .footer .footer__content .footer__input input {
     padding-right: 120px;
+  }
+  .recent__image {
+    height: 200px;
   }
 }/*# sourceMappingURL=style.css.map */
