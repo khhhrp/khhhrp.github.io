@@ -13,83 +13,198 @@
 1280
 1024
 768 */
-
-@media (max-width: 1280px) {
-    .container{
-        max-width: 1000px;
+@media (max-width:1280px) {
+    .container { 
+        padding: 0 10px ;
     }
-    .city__bg .city .city__image img:first-child {
-        bottom: -88px;
-    }
-    .man__bg .man__right img {
+    .man__bg .man__right {
         display: none;
     }
 }
-
-@media (max-width: 1024px) {
-.container{
-    max-width: 900px;
-}
-.city__bg .city .city__content p {
-    margin-right: 20px;
-}
-.areas__card {
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 40px
-}
-.man__bg .man__right {
-    height: 550px;
-}
-.recent .recent__card {
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 40px;
-}
-.man .man__content {
-    bottom: 0px;
-}
-}
-
-
-@media (max-width: 768px) {
+@media (max-width:1024px) {
     .container {
-        margin: 0 15px;
-    }
-    .header .header__title {
-        font-size: 14px;
-    }
-    .header .header__logo a {
-        font-size: 14px;
-        margin-right: 25px;
-    }
-    .header .header__body a {
-        font-size: 12px;
-    }
-    .city__bg .city .city__content {
-        max-width: 420px;
+        max-width: 1000px;
     }
     .city__bg .city .city__image img:first-child {
-        bottom: -44px;
-        left: -17px;
+        display:none;
+    }
+    .city__image {
+        display: none;
+    }
+    .city__bg .city .city__content {
+        padding-bottom: 40px;
+    }
 }
-.city__bg .city .city__image img:last-child {
-    left: -94px;
-    bottom: -41px;
+@media (max-width:956px) {
+    .city__bg {
+        background-image: linear-gradient(to right, #e4ecf0 0%, #e4ecf0 70%, #00486D 70%, #00486D 100%);
+        }
+        .areas__card {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 40px;
+            }
+        .recent .recent__card {
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 40px;
+            }
+        .recent .recent__card .recent__items .recent__image img  {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            }
+        .header .header__logo a {
+            font-size: 18px;
+        }
+        .header__title p {
+            font-size: 17px;
+        }
+        .header .header__logo a:last-child {
+            margin-right: 32px;
+        }
 }
-.man__bg .man__right {
-    display: none;
+@media (max-width: 924px) {
+    .header a {
+        font-size: 15px;
+    }
+    .man .man__content .man__text h2 {
+        font-size: 30px;
+    }
+    .man .man__content .man__text p {
+        font-size: 17px;
+    }
+    .man .man__content {
+        padding-left: 61px;
+        padding-top: 50px;
+        padding-bottom: 65px;
+        padding-right: 53px;
+    }
 }
-.man .man__content {
-    max-width: 423px;
-    padding-left: 50px;
-    padding-top: 18px;
-    padding-bottom: 12px;
-    padding-right: 50px;
-    max-width: 335px;
+@media (max-width:907px) {
+    .header a {
+        font-size: 14px;
+    }
+    .header__title p {
+        font-size: 15px;
+    }
+    .header .header__logo a {
+        font-size: 16px;
+    }
+    .city__bg .city .city__content h2 {
+        font-size: 51px;
+        line-height: 62px;
+    }
+    .city__bg .city .city__content p {
+        font-size: 22px;
+    }
+    .city__bg .city .city__content .city__btn a {
+        font-size: 17px;
+    }
+    .areas__title h2 {
+        font-size: 43px;
+    }
+    .areas__title p {
+        font-size: 23px;
+    }
+    .areas__card .areas__item .areas__content h3 {
+        font-size: 21px;
+    }
+    .areas__card .areas__item .areas__content p {
+        font-size: 19px;
+    }
+    .slide .slide__content h2 {
+        font-size: 31px;
+    }
+    .man .man__content {
+        padding-bottom: 58px;
+    }
 }
-.man .man__content .man__text p {
-    margin-bottom: 29px;
+@media (max-width:862px) {
+    .container {
+        max-width:900px;
+    }
+    .header .header__tel .header__btn a {
+        padding: 10px 22px;
+    }
+    .header .header__logo a {
+        font-size: 15px;
+    }
+    .header a {
+        font-size: 13px;
+    }
+    .man .man__content {
+        padding-bottom: 30px;
+        padding-top: 34px;
+    }
 }
-.footer .footer__content .footer__logo {
-    margin-right: 95px;
+@media (max-width:827px) {
+    .man img {
+        display: none;
+    }
+    .man .man__content {
+        position: static;
+        margin: 0 auto;
+    }
+    .city__bg {
+        background-image:none;
+    }
+    .city__bg .city .city__content {
+        margin: 0 auto;
+    }
+    .header .header__body {
+        display: block;
+    }
+    .header .header__logo {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .header .header__tel {
+        justify-content: center;
+    }
+    .areas__card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .areas__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .recent .recent__card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .recent > h2 {
+        text-align: center;
+    }
+    .footer .footer__content {
+        flex-direction: column;
+    }
+    .footer .footer__content .footer__logo {
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
 }
+@media (max-width:500px) {
+    .header__title p {
+        font-size: 13px;
+    }
+    .header__logo {
+        flex-direction: column;
+    }
+    .header .header__logo a {
+        margin-bottom: 5px;
+    }
+    .city__bg .city .city__content h2 {
+        font-size: 44px;
+        line-height: 60px;
+    }
+    .slide .slide__content h2 {
+        font-size: 21px;
+        margin-bottom: 50px;
+    }
+    .man .man__content {
+        padding-left: 53px;
+    }
+    .footer .footer__content .footer__input input {
+        padding-right: 120px;
+    }
 }
