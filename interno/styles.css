@@ -35,6 +35,17 @@ img {
 .header__logo {
     margin-right: auto;
 }
+.block_none{
+    display: none; 
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+    color: #292f36;
+}
+.block_none:hover {
+    color: #cda274;
+}
 .header__link {
     text-decoration: none;
     font-size: 20px;
@@ -129,6 +140,8 @@ img {
     line-height: 27px;
     letter-spacing: 0.36px;
     color: #4d5053;
+    display: inline-flex;
+    align-items: center;
 }
 .design_button span {
     margin-right: 9px;
@@ -511,9 +524,9 @@ img {
     padding-bottom: 110px;
 }
 .icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
+    display: inline-flex;
+    /* width: 1em;
+    height: 1em; */
     stroke-width: 0;
     stroke: currentColor;
     fill: currentColor;
@@ -704,5 +717,27 @@ img {
     }
     .footer_right {
         flex-direction: column;
+    }
+    .header__link {
+        display: none;
+    }
+    .block_none {
+        display: inline-block;
+    }
+    .people__content {
+        margin: 19px 10px 22px 30px;
+    }
+    .people__text {
+        font-size: 15px;
+    }
+    .name {
+        font-size: 21px;
+        line-height: 33px;
+    }
+    .country {
+        font-size: 15px;
+    }
+    .people__header {
+        margin-bottom: 20px;
     }
 }
