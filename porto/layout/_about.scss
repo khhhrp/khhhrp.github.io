@@ -1,0 +1,19 @@
+.about {
+    margin-top: 9.3rem;
+    margin-bottom: 11.5rem;
+    h2 {
+        font-weight: 700;
+        font-size:2.4rem ;
+        line-height: 2.9rem;
+        margin-bottom: 7.6rem;
+    }
+    p {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        text-align: justify;
+        color:#333;
+    }
+    p:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

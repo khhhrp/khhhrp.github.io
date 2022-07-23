@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    font-size: 62.5%;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}

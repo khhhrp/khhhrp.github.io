@@ -1,0 +1,219 @@
+@import "layout/null";
+@import "layout/header";
+@import "layout/about";
+@import"layout/skills";
+@import"layout/portfolio";
+@import"layout/footer";
+
+/* 1920
+1440
+1280
+1024
+768 */
+
+@media (max-width:1280px) {
+    .container {
+        max-width: 105rem;
+    }
+}
+
+@media (max-width:1024px) {
+    .container {
+        max-width: 100rem;
+    }
+    .header_content {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .portfolio {
+        padding: 6rem 0;
+    }
+    .portfolio h2 {
+        margin-bottom: 4rem;
+    }
+    .portfolio_link {
+        display: none;
+    }
+    .portfolio .portfolio_text_block {
+        max-width: 100%;
+            p {
+                text-align: center;
+                margin-bottom: 10rem;
+            }
+    }
+    .portfolio .portfolio_text_block {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    .portfolio .portfolio_img_block {
+        margin: 0 auto;
+    }
+    .skills_content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .skills_image {
+        margin-bottom: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .red {
+        display: flex;
+    }
+    .skills_info {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .skills_wrapper .skills > h3 {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .skills_wrapper {
+        padding: 6rem 0;
+    }
+    .about {
+        text-align: center;
+    }
+    .footer_bot {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 768px) { 
+    .header_nav {
+        padding-top: 3.6rem;
+        .header_link {
+            display: none;
+        }
+        .header_logo {
+            margin: 0 auto;
+        }
+        .burger {
+            display: block;
+        }
+    }
+    .container { 
+        max-width: 31.2rem;
+        padding:0 0.5rem;
+    }
+    .header_content {
+        margin-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .header_content h1 {
+        font-size: 2rem;
+        line-height: 2.4rem;
+        margin-bottom: 1.3rem;
+    }
+    .header_content p {
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        margin-bottom: 4.1rem;
+    }
+    .header_content a {
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+    .about {
+        margin:2.5rem 0;
+            h2 { 
+                font-weight: 600;
+                font-size: 2.4rem;
+                line-height: 2.9rem;
+                margin-bottom: 1.9rem;
+            }
+            p {
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+            }
+    }
+    .about p:not(:last-child) {
+        margin-bottom: 2rem;
+    }
+    .skills_wrapper {
+        padding: 2.5rem 0;
+    }
+    .skills_wrapper .skills > h3 {
+        margin-bottom: 2.5rem;
+        font-weight: 600;
+    }
+    .skills_wrapper .skills_content {
+        flex-wrap: nowrap;
+    }
+    .red {
+        width: 9rem;
+        font-size: 1.2rem;
+    }
+    .blue {
+        font-size: 1.2rem;
+    }
+    .skills_item {
+        margin-bottom: 1.2rem;
+    }
+    .skills_item .skills_bar_block {
+        width: 21.1rem;
+    }
+    .skills_item:first-child {
+        margin-bottom: 3.5rem;
+    }
+    .portfolio {
+        padding: 2.5rem;
+            h2 {
+                font-weight: 600;
+                margin-bottom: 1.9rem;
+            }
+            .portfolio_text_block h3 {
+                font-weight: 500;
+                font-size: 1.4rem;
+                margin-bottom: 1.5rem;
+            }
+            .portfolio_text_block p {
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                margin-bottom: 3rem;
+            }
+    }
+    .img_left .img_one {
+        width: auto;
+        height: auto;
+        margin-bottom: 1.2rem;
+    }
+    .img_left {
+        margin-right: 1.4rem;
+    }
+    .img_three {
+        margin-bottom: 1.4rem;
+    }
+    .footer_wrapper {
+        background-color: #FFFAF2;
+        padding-top: 2.6em;
+        padding-bottom: 5rem;
+    }
+    .footer_link {
+        display: none;
+    }
+    .footer_wrapper .footer h3 {
+        font-weight: 600;
+        text-align: center;
+    }
+    .footer_bot {
+        margin-top: 2.5rem;
+        .footer_item a {
+            margin-bottom: 1.9rem;
+        }
+    }
+    .footer_bot .footer_item a {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .footer_item {
+        text-align: center;
+    }
+    .footer_item :last-child {
+        margin: 0;
+    }
+}
+

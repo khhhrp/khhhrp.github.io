@@ -1,0 +1,82 @@
+.header_wrapper {
+    background-image: url(/porto/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.burger {
+    display: none;
+}
+
+.header_bg {
+    background: rgba(198, 108, 73, 0.3);
+}
+
+.container {
+    max-width: 111rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    padding-top: 9.3rem;
+    position: relative;
+    z-index: 3;
+    min-height: 3rem;
+    .header_logo {
+        margin-right: auto;
+            p {
+                font-size: 2.4rem;
+                color: #fff;
+                font-weight: 700;
+            }
+    }
+    .header_link {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+            a {
+                display: block;
+                text-decoration: none;
+                line-height: 2.2rem;
+                font-size: 1.8rem;
+                color: #fff;
+                transition: 0.2s;
+                margin-left: 6rem;
+            }
+            a:hover {
+                font-weight: 700;
+            }
+    }
+}
+
+
+.header_content {
+    max-width: 72.5rem;
+    margin-top: 14.5rem;
+    padding-bottom: 24rem;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+        h1 {
+            font-size: 6.4rem;
+            line-height: 7.8rem;
+            margin-bottom: 2.6rem;
+        }
+        p {
+            font-size: 2.4rem;
+            line-height: 2.9rem;
+            margin-bottom: 10.6rem;
+        }
+        a {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            color: #fff;
+        }
+}
+
+
