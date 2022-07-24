@@ -264,6 +264,10 @@ img {
 .footer_bot .footer_item a {
   margin-bottom: 1.4rem;
 }
+.footer_bot .footer_item a:hover {
+  font-weight: 600;
+  transition: 0.2s;
+}
 
 .footer_item :last-child {
   margin-right: 16.7rem;
