@@ -1,6 +1,6 @@
 # Links below
 
-- [Portfolio](https://vdmkhrp.github.io/portfolio/)
+- [Ravshanama](https://vdmkhrp.github.io/portfolio/)
 - [MC](https://vdmkhrp.github.io/MC/)
 - [Porto](https://vdmkhrp.github.io/porto/)
 - [Beauty](https://vdmkhrp.github.io/beauty/)
