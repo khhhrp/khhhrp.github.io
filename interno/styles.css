@@ -64,6 +64,8 @@ img {
 /* Первый блок Dream */
 .dream__backgound {
     border-radius: 0px 0px 0px 290px;
+    padding-left: env(safe-area-inset-left, 20px);
+    padding-right: env(safe-area-inset-right, 20px);
     background-image: url(./img/img01.jpg);
     background-repeat: no-repeat;
     background-position: center;
