@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <title>frontloops-2</title>
   </head>
@@ -18,32 +21,37 @@
       </div>
       <label class="radio">
         <input type="radio" class="radio__input visually-hidden" name="card" />
-        <div class="radio__wrap">
-        <img class="radio__img" src="./img/visa.svg" alt="logo" />
-        <span class="radio__text">visa</span>
-        <img class="radio__fake" src="./img/check.svg" alt="check" />
-       </div>
+        <span class="radio__wrap">
+          <img class="radio__img" src="./img/visa.svg" alt="logo" />
+          <span class="radio__text">visa</span>
+          <img class="radio__fake" src="./img/check.svg" alt="check" />
+        </span>
       </label>
       <label class="radio">
-        <input type="radio" class="radio__input visually-hidden" name="card" checked />
-        <div class="radio__wrap">
+        <input
+          type="radio"
+          class="radio__input visually-hidden"
+          name="card"
+          checked
+        />
+        <span class="radio__wrap">
           <img class="radio__img" src="./img/mastercard.svg" alt="logo" />
           <span class="radio__text">mastercard</span>
           <img class="radio__fake" src="./img/check.svg" alt="check" />
-        </div>
+        </span>
       </label>
       <label class="radio">
         <input type="radio" class="radio__input visually-hidden" name="card" />
-        <div class="radio__wrap">
+        <span class="radio__wrap">
           <img class="radio__img" src="./img/maestro.svg" alt="logo" />
           <span class="radio__text">maestro</span>
           <img class="radio__fake" src="./img/check.svg" alt="check" />
-        </div>
+        </span>
       </label>
-        <a href="#!" class="btn-block__link">
-          next step
-          <img class="btn-block__img" src="img/arrow.svg" alt="logo" />
-        </a>
+      <a href="#!" class="btn-block__link">
+        next step
+        <img class="btn-block__img" src="img/arrow.svg" alt="logo" />
+      </a>
     </div>
   </body>
 </html>

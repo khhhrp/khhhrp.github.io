@@ -14,10 +14,12 @@ p {
 
 body {
   min-height: 100%;
+  display: -ms-grid;
   display: grid;
   place-items: center;
   margin: 0;
-  background-image: url(img/background.jpg);
+  font-family: "Hedvig Letters Sans", sans-serif;
+  background-image: url(./img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -29,13 +31,17 @@ img {
 
 .payment-block {
   overflow: hidden;
-  width: 100%;
+  width: calc(100% - 20px);
   max-width: 400px;
+
   background-color: #fff;
   border-radius: 3px;
   padding-top: 25px;
-  margin-top: 60px;
   border-radius: 8px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .dots {
   display: flex;
@@ -78,6 +84,7 @@ img {
 }
 
 .btn-block__link:active {
+  -webkit-transform: translateY(2px);
   transform: translateY(2px);
 }
 
@@ -92,7 +99,6 @@ img {
   width: 60px;
   margin-right: 20px;
 }
-
 
 .radio__wrap {
   display: flex;
@@ -119,6 +125,7 @@ img {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
