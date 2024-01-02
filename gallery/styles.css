@@ -15,11 +15,17 @@ body {
 }
 
 
+.wrapper {
+  padding: 0 20px;
+}
+
+
 .gallery {
   display: flex;
   gap: 30px;
   width: 500px;
   margin-top: 250px;
+  margin-bottom: 250px;
   margin-left: auto;
   margin-right: auto;
   overflow-x: scroll;
@@ -36,4 +42,25 @@ body {
   border-radius: 15px;
   font-family: 'Fjalla One', sans-serif;
   font-size: 16px;
+}
+
+
+.gallery__item:last-child {
+  padding: 0;
+} 
+
+
+.gallery__img {
+  border-radius: 15px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+@media (max-width: 510px) {
+  .gallery {
+    width: 400px;
+  }
+  .gallery__item {
+    max-width: 450px;
+  }
 }
