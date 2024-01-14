@@ -27,10 +27,11 @@ img {
 }
 
 .container {
-  width: 620px;
+  max-width: 620px;
   margin-left: auto;
   margin-top: 70px;
   margin-right: auto;
+  margin-bottom: 70px;
   padding-top: 40px;
   padding-left: 60px;
   padding-right: 60px;
@@ -41,7 +42,7 @@ img {
   background-image: url(./img/bicycle.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 10px 230px;
+  background-position: 0px 230px;
 }
 
 .header {
@@ -82,12 +83,12 @@ img {
 .product {
   display: grid;
   gap: 40px;
-  overflow: hidden;
 }
 
 .product_row {
   display: grid;
-  grid-template-columns: 400px auto;
+  grid-template-columns: 1fr auto;
+  gap:40px;
 }
 
 .product__name {
@@ -97,7 +98,7 @@ img {
 }
 
 .product__price {
-  margin-left: auto;
+  text-align: right;
   font-size: 20px;
   font-weight: 600;
 }
@@ -107,4 +108,36 @@ img {
   font-weight: 600;
   color: #5c5c5c;
   overflow: hidden;
+}
+
+@media (max-width: 650px) {
+  .container {
+    max-width: 520px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 170px;
+    background-position: 0px 208px;
+  }
+
+  .header h2 {
+    font-size: 18px;
+  }
+  
+  .text {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+
+  .product {
+    gap: 30px;
+  }
+
+  .product__name {
+    font-size: 16px;
+  }
+  
+  .product__price {
+    font-size: 18px;
+  }
 }
