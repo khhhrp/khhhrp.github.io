@@ -15,29 +15,96 @@ p {
 body {
   min-height: 100%;
   margin: 0;
-  background-color: #4A9E86;
+  background-color: #4a9e86;
   overflow: hidden;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
 }
 
 img {
   max-width: 100%;
 }
 
-.price-block {
-  max-width: 600px;
+.container {
+  width: 620px;
   margin-left: auto;
+  margin-top: 70px;
   margin-right: auto;
-  margin-top: 100px;
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 200px;
   background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  background-image: url(./img/bicycle.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 10px 230px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-.acc-link {
+.linkBlock {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #C1BEBA;
-  width: 34px;
-  height: 34px;
+  margin-bottom: 10px;
+}
+
+.linkBlock__link:hover {
+  box-shadow: 0px 0px 0px 5px rgba(242, 242, 242, 1);
+}
+
+.linkBlock__link {
+  padding: 10px;
+  border: 1px solid #dcdcdc;
   border-radius: 50%;
+  transition: box-shadow 0.3s;
+}
+
+.linkBlock__img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.text {
+  color: #b1b2b8;
+  margin-bottom: 40px;
+}
+
+.product {
+  display: grid;
+  gap: 40px;
+  overflow: hidden;
+}
+
+.product_row {
+  display: grid;
+  grid-template-columns: 400px auto;
+}
+
+.product__name {
+  color: #5f6266;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.product__price {
+  margin-left: auto;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product__name--up {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #5c5c5c;
+  overflow: hidden;
 }
