@@ -38,7 +38,7 @@ img {
   padding-bottom: 200px;
   background-color: #fff;
   border-radius: 5px;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-image: url(./img/bicycle.png);
   background-size: 100%;
   background-repeat: no-repeat;
