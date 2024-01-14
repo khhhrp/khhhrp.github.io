@@ -16,7 +16,7 @@ body {
   min-height: 100%;
   margin: 0;
   background-color: #4a9e86;
-  overflow: hidden;
+  /* overflow: hidden; */
   -moz-user-select: none;
   -khtml-user-select: none;
   user-select: none;
