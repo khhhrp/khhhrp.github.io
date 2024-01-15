@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  overflow: scroll;
+  overflow: hidden;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background-image: url(./img/bg2.jpg);
+  background-position: -1073px -1127px;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Убираем стрелочки у input */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.container {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  background-color: #171B1D;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form__input {
+  appearance: none;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
