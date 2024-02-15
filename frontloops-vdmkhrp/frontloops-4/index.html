@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <div class="header">
-        <div class="header__title">Mark Zuckerberg</div>
+        <div class="header__title">mark zuckerberg</div>
         <a href="#!" class="header__link">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -18,15 +18,37 @@
           </svg>
         </a>
       </div>
-      <h5 class="day">today</h5>
-      <div class="message__left">
-        <h3>10:53</h3>
-        <p>Hi, Mark! I made a new design for Messenger App.</p>
-      </div>
-      <div class="message__right">
-        <h3>10:57</h3>
-        <p>Yo! Send it to my assistant and we'll review it during the year.</p>
+      <div class="body">
+        <h5 class="day">today</h5>
+        <div class="message-container">
+          <div class="message message--from">
+            <time class="message__time">10:53</time>
+            <div class="message__body">
+              Hi, Mark! I made a new design for Messenger App.
+            </div>
+          </div>
+          <div class="message message--user">
+            <time class="message__time">10:53</time>
+            <div class="message__body message--user">
+              Yo! Send it to my assistant and we'll review it during the year.
+            </div>
+          </div>
+          <div class="message message--from">
+            <time class="message__time">10:53</time>
+            <div class="message__body">
+              But Mark...
+            </div>
+        </div>
+        <div class="message">
+          <div class="message__body message--user message--error">
+            You were blocked by the user.
+          </div>
       </div>
     </div>
+    <div class="line"></div>
+    <form class="send-form">
+      <input type="text" placeholder="Enter your message" class="send-from--input">
+      <button type="button" class="btn">send</button>
+    </form>
   </body>
 </html>
