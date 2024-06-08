@@ -4,9 +4,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* -------------------- HEADER -------------------- */
+
 .wrapper {
   max-width: 1350px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header {
@@ -34,6 +37,12 @@ body {
 .ellipse {
   position: absolute;
   display: block;
+  width: 18px;
+  height: 18px;
+  background-color: #C4C4C4;
+  border-radius: 50%;
+  left: 40px;
+  bottom: 14px;
 }
 
 .header__list {
@@ -42,17 +51,31 @@ body {
   align-items: center;
 }
 
+.header__list-item {
+  z-index: 1;
+}
+
 .header__list-link {
   font-size: 18px
 }
 
-.header__button {
+.btn-black {
   padding: 13px 17px;
   font-size: 18px;
   border: none;
   border-radius: 5px;
   background-color: #373737;
   color: #fff;
+  transition: ease 0.3s;
+}
+
+.btn-black:hover {
+  cursor: pointer;
+  background-color: #757575;
+  color: #000;
+}
+
+.header__button {
   margin-right: 56px;
 }
 
@@ -60,4 +83,76 @@ body {
   width: 30px;
   display: flex;
   align-items: center;
+}
+
+/* -------------------- MAIN -------------------- */
+
+.lux {
+  display: flex;
+  background-image: url(../img/office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 763px;
+}
+
+.lux__social {
+  min-width: 310px;
+  display: flex;
+  align-items: center;
+}
+
+.lux__list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 55px;
+  row-gap: 40px;
+}
+
+.lux__list-link  {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lux__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 41px 0;
+}
+
+.lux__description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  max-width: 500px;
+  text-align: center;
+  align-items: center;
+}
+
+.lux__title {
+  font-family: "Revalia", sans-serif;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+
+.lux__card-text img {
+  width: 20px;
+  height: 20px;
+}
+
+.lux__text {
+  max-width: 412px;
+  font-size: 20px;
+  color: #fff;
 }
