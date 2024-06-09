@@ -6,43 +6,50 @@ body {
 
 /* -------------------- HEADER -------------------- */
 
-.wrapper {
+.container {
   max-width: 1350px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
-.header {
+.header__container {
   display: flex;
-  padding: 23px 0;
+  justify-content: space-between;
+  padding: 23px 15px;
 }
 
-.header a {
+.header__container a {
   color: #000;
 }
 
-.header__logo-link {
-  margin-right: auto;
-  font-weight: 700;
-  font-size: 25px;
+.header__logo {
   display: flex;
   align-items: center;
+  font-weight: 700;
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+.header__menu {
+  display: flex;
+  column-gap: 35px;
 }
 
 .header__nav {
-  margin-right: 35px;
   display: flex;
+  align-items: center;
   position: relative;
 }
-.ellipse {
-  position: absolute;
-  display: block;
+
+.header__nav::before {
+  content: '';
   width: 18px;
   height: 18px;
+  position: absolute;
+  top: 34%;
+  left: 12%;
   background-color: #C4C4C4;
   border-radius: 50%;
-  left: 40px;
-  bottom: 14px;
+  z-index: -1; 
 }
 
 .header__list {
@@ -51,18 +58,27 @@ body {
   align-items: center;
 }
 
-.header__list-item {
-  z-index: 1;
+.header__list-item:first-child {
+  margin-right: 9px;
 }
 
 .header__list-link {
   font-size: 18px
 }
 
+.header__list-link:hover {
+  opacity: 0.5;
+}
+
+.header__list-link:active {
+  opacity: 1;
+}
+
 .btn-black {
   padding: 13px 17px;
   font-size: 18px;
   border: none;
+  white-space: nowrap;
   border-radius: 5px;
   background-color: #373737;
   color: #fff;
@@ -75,101 +91,11 @@ body {
   color: #000;
 }
 
-.header__button {
-  margin-right: 56px;
-}
-
 .header__search-link {
   width: 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /* -------------------- MAIN -------------------- */
-
-.lux {}
-
-.lux__background {
-  display: flex;
-  background-image: url(../img/office.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 763px;
-}
-
-.lux__social {
-  min-width: 310px;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  background: transparent;
-  backdrop-filter: blur(10px);
-}
-
-.lux__nav {
-  margin-bottom: 253px;
-  margin-left: 55px;
-}
-
-.lux__list {
-  display: flex;
-  flex-direction: column;
-  row-gap: 40px;
-}
-
-.lux__list-link  {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.lux__content-wrapper {
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.lux__content {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 41px 0;
-  background: transparent;
-  backdrop-filter: blur(10px);
-}
-
-.lux__description {
-  display: flex;
-  flex-direction: column;
-  row-gap: 30px;
-  max-width: 500px;
-  text-align: center;
-  align-items: center;
-}
-
-.lux__title {
-  font-family: "Revalia", sans-serif;
-  font-size: 36px;
-  line-height: 45px;
-}
-
-
-.lux__card-text img {
-  width: 20px;
-  height: 20px;
-}
-
-.lux__text {
-  max-width: 412px;
-  font-size: 20px;
-  color: #fff;
-}
-
-.black-block {
-  height: 93px;
-  width: 100%;
-  background-color: #000;
-}
