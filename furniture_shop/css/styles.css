@@ -87,7 +87,9 @@ body {
 
 /* -------------------- MAIN -------------------- */
 
-.lux {
+.lux {}
+
+.lux__background {
   display: flex;
   background-image: url(../img/office.jpg);
   background-repeat: no-repeat;
@@ -99,13 +101,20 @@ body {
 .lux__social {
   min-width: 310px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: end;
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+
+.lux__nav {
+  margin-bottom: 253px;
+  margin-left: 55px;
 }
 
 .lux__list {
   display: flex;
   flex-direction: column;
-  margin-left: 55px;
   row-gap: 40px;
 }
 
@@ -117,17 +126,19 @@ body {
   justify-content: center;
 }
 
-.lux__content {
+.lux__content-wrapper {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.box {
+.lux__content {
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 41px 0;
+  background: transparent;
+  backdrop-filter: blur(10px);
 }
 
 .lux__description {
@@ -155,4 +166,10 @@ body {
   max-width: 412px;
   font-size: 20px;
   color: #fff;
+}
+
+.black-block {
+  height: 93px;
+  width: 100%;
+  background-color: #000;
 }
