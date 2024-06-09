@@ -98,4 +98,35 @@ body {
   justify-content: center;
 }
 
-/* -------------------- MAIN -------------------- */
+/* -------------------- WELCOME -------------------- */
+
+.welcome__bg-block {
+  display: flex;
+  align-items: center;
+  background-image: url(../img/office.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.welcome__links {
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content: center;
+  padding-left: 55px;
+}
+
+.welcome__link {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome__desc {
+
+}
