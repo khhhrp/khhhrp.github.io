@@ -1,0 +1,30 @@
+:root {
+  --first-color: #fff;
+  --second-color: #DFDFDF;
+  --main-bg: #020204;
+  --secondary-bg: #14141D;
+  --accent-color: #C7A17A;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--main-bg);
+  color: var(--first-color);
+}
+
+.container {
+  max-width: 1230px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}

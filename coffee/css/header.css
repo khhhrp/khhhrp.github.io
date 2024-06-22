@@ -1,0 +1,124 @@
+.header__upper {
+  height: 30px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #32323d;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__upper-lang {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.header__upper-btn {
+  padding: 0;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  color: var(--first-color);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.header__upper-btn:hover {
+  color: var(--accent-color);
+}
+
+.header__upper-link {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--first-color);
+  transition-property: color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.header__upper-link:hover {
+  color: var(--accent-color);
+}
+
+.header__lower {
+  border-bottom: 1px solid #32323d;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  height: 90px;
+}
+
+.nav {
+  display: flex;
+  column-gap: 35px;
+}
+.nav__link {
+  color: var(--first-color);
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  transition-property: color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+.nav__link_active {
+  color: var(--accent-color);
+  cursor: default;
+}
+
+.nav__link:hover {
+  color: var(--accent-color);
+}
+
+.logo {
+  width: 58px;
+  height: 55px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  position: relative;
+}
+
+.actions::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  background-color: var(--accent-color);
+}
+
+.action__btn {
+  max-width: 30px;
+  max-height: 30px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.action__btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
