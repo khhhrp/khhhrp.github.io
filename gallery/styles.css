@@ -34,7 +34,7 @@ body {
 }
 
 
-.gallery__item { 
+.gallery__item {
   min-width: 500px;
   background-color: #fee135;
   padding: 15px;
@@ -42,18 +42,6 @@ body {
   border-radius: 15px;
   font-family: 'Fjalla One', sans-serif;
   font-size: 16px;
-}
-
-
-.gallery__item:last-child {
-  padding: 0;
-} 
-
-
-.gallery__img {
-  border-radius: 15px;
-  object-fit: cover;
-  vertical-align: middle;
 }
 
 @media (max-width: 510px) {
