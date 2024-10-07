@@ -1,6 +1,6 @@
 # Links below
 
-- [Portfolio](https://vdmkhrp.github.io/portfolio/)
+- [Personal](https://vdmkhrp.github.io/personal/)
 - [MC](https://vdmkhrp.github.io/MC/)
 - [Porto](https://vdmkhrp.github.io/porto/)
 - [Beauty](https://vdmkhrp.github.io/beauty/)
