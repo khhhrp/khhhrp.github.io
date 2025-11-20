@@ -20,6 +20,12 @@ const getHtmlInputs = () => {
 };
 
 export default defineConfig({
+  resolve: {
+    alias: {
+      "@scss": resolve(__dirname, "src/scss"),
+    },
+  },
+
   root: __dirname,
   base: "",
   plugins: [
@@ -28,6 +34,17 @@ export default defineConfig({
       minify: true,
     }),
   ],
+
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: "modern",
+        charset: false,
+        quietDeps: true,
+      },
+    },
+  },
+
   build: {
     rollupOptions: {
       input: {
