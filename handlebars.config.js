@@ -23,11 +23,6 @@ const projectsLinks = [
     videoClass: "obj-top",
   },
   {
-    name: "Lumo",
-    href: "https://khhhrp.github.io/lumo/",
-    videoName: "lumo",
-  },
-  {
     name: "Ecommerce",
     href: "https://khhhrp.github.io/ecommerce/",
     videoName: "ecommerce",
@@ -76,6 +71,11 @@ const projectsLinks = [
     name: "Porto",
     href: "https://khhhrp.github.io/porto/",
     videoName: "porto",
+  },
+  {
+    name: "Lumo",
+    href: "https://khhhrp.github.io/lumo/",
+    videoName: "lumo",
   },
 ];
 
@@ -217,10 +217,35 @@ const frontloopsLinks = [
     href: "https://khhhrp-frontloops-task-24.netlify.app/",
     videoName: "task24",
   },
-   {
+  {
     name: "Annual cost statistics",
     href: "https://khhhrp-frontloops-task-25.netlify.app/",
     videoName: "task25",
+  },
+  {
+    name: "Payment step page",
+    href: "https://khhhrp-frontloops-task-26.netlify.app/",
+    videoName: "task26",
+  },
+  {
+    name: "Cinema ticket payment modal",
+    href: "https://khhhrp-frontloops-task-27.netlify.app/",
+    videoName: "task27",
+  },
+  {
+    name: "Gaming news app",
+    href: "https://khhhrp-frontloops-task-28.netlify.app/",
+    videoName: "task28",
+  },
+  {
+    name: "Smart living dashboard",
+    href: "https://khhhrp-frontloops-task-29.netlify.app/",
+    videoName: "task29",
+  },
+  {
+    name: "One-click movie buy overlay",
+    href: "https://khhhrp-frontloops-task-30.netlify.app/",
+    videoName: "task30",
   },
 ];
 
