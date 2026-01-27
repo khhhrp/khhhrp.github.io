@@ -21,7 +21,7 @@
     translate: var(--origin-x);
     font-weight: 700;
     font-size: 100px;
-    color: rgba(0, 0, 0, 0.3);
+    color: rgba($dark, 0.3);
     text-decoration: none;
     white-space: nowrap;
     transition: color 500ms ease;

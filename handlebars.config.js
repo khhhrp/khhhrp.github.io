@@ -1,6 +1,5 @@
 // import fernirav1 from "./src/video/fernir.av1.mp4";   такой подход лучше
-import { resolve } from "path";
-import { dirname } from "path";
+import { dirname, resolve } from "path";
 
 const __dirname = dirname(new URL(import.meta.url).pathname);
 
@@ -17,10 +16,25 @@ const projectsLinks = [
     videoName: "tradeblade",
   },
   {
+    name: "Todo List",
+    href: "https://todo-vanilla-j.netlify.app/",
+    videoName: "todo",
+  },
+  {
     name: "Fernir",
     href: "https://fernir.vercel.app/",
     videoName: "fernir",
     videoClass: "obj-top",
+  },
+  {
+    name: "Byteex",
+    href: "https://byteex.netlify.app/",
+    videoName: "byteex",
+  },
+  {
+    name: "Superlist.",
+    href: "https://superlist-form.netlify.app/",
+    videoName: "superlist",
   },
   {
     name: "Ecommerce",

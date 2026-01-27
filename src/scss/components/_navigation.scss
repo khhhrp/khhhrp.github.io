@@ -6,7 +6,9 @@
   z-index: 500;
   color: $dark;
   visibility: hidden;
-  transition: visibility 950ms ease, translate 450ms ease;
+  transition:
+    visibility 950ms ease,
+    translate 450ms ease;
   overflow: hidden;
   pointer-events: none;
 
@@ -61,7 +63,12 @@
 
     @media (width < 1024px) {
       &:nth-child(1) {
-        padding-inline: 15px;
+        padding-left: env(safe-area-inset-left, 15px);
+        padding-right: 15px;
+      }
+
+      &:last-child {
+        padding-right: env(safe-area-inset-right, 15px);
       }
 
       &:nth-child(2),
@@ -170,7 +177,7 @@
     }
 
     @media (width < 1024px) {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
 
@@ -179,12 +186,12 @@
     line-height: 1.2;
     font-weight: 600;
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba($dark, 0.5);
     overflow: hidden;
     background-image: linear-gradient(
       to right,
       $dark 50%,
-      rgba(0, 0, 0, 0.5) 50%
+      rgba($dark, 0.5) 50%
     );
     background-clip: text;
     -webkit-background-clip: text;
